@@ -5,9 +5,6 @@ public class MoneyCalc  {
     public void calculate(int sum, int years, double percent) {
         double amount = sum * Math.pow(1 + (percent / 12), 12 * years);
         double interest = amount - sum;
-        System.out.println("Compound Interest after " + years + " years: "+ interest);
-        System.out.println("Amount after " + years + " years: "+amount);
-
         System.out.println("Deposit: " + sum + " hrn ");
         System.out.println("Percent: " + percent*100 + "%");
         System.out.println("Years: " + years);
