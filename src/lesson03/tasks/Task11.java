@@ -10,6 +10,8 @@ public class Task11 {
 
     public static void getChange(int n) {
         int[] arr = new int[n];
+        int maxInd = 0;
+        int minInd = 0;
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);
         }
@@ -22,12 +24,17 @@ public class Task11 {
 
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] == max){
-                arr[i] = min;
+                maxInd = i;
+
             }
             if(arr[i] == min){
-                arr[i] = max;
+                minInd = i;
             }
         }
+        int temp = arr[minInd];
+        arr[minInd] = arr[maxInd];
+        arr[maxInd] = temp;
+
         System.out.print("New array: ");
         System.out.println(Arrays.toString(arr));
     }
