@@ -37,7 +37,7 @@ public class Main {
         getFullTank(50);
         System.out.println("-------------------------------" );
         System.out.println("You've reached " + Kiev);
-        getConsumptionsInfo(148);
+        getConsumptionsInfo(thirdPortion);
         System.out.println("Total per Trip : "+ totalPerTrip + " hryvnas");
 
     }
