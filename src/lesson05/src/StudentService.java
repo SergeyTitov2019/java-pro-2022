@@ -1,6 +1,7 @@
 package lesson05.src;
 
 public class StudentService {
+
     public static void print(Student[] students) {
         for(Student s: students){
             System.out.println(s);
@@ -14,9 +15,9 @@ public class StudentService {
                 System.out.println(count + ". " + s.lastName +" " + s.firstName +" " +s.middleName);
                 count++;
             }
-
         }
     }
+
     public static void checkDepartmentGroup(Student[] students,String department, String group) {
         System.out.println(department +" факультет: ");
         System.out.println( "Группа: " + group);
@@ -28,6 +29,7 @@ public class StudentService {
             }
         }
     }
+
     public static void checkAge(Student[] students,int yearOfBirth) {
         System.out.println("список студентов старше " +yearOfBirth+" года :");
         int count = 1;
@@ -38,6 +40,7 @@ public class StudentService {
             }
         }
     }
+
     public static void checkGroup(Student[] students,String group) {
         System.out.println("Список студентов  группы № " +group+" :");
         int count = 1;
